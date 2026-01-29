@@ -1,0 +1,384 @@
+/* =============================================
+   Чайхона Согдиана — Адаптивные стили
+   Mobile-first подход
+   Брейкпоинты: 480px, 768px, 1024px, 1280px
+   ============================================= */
+
+/* =============================================
+   Мобильные устройства (по умолчанию < 480px)
+   ============================================= */
+@media (max-width: 479px) {
+  :root {
+    --container-padding: 1rem;
+  }
+
+  h1 {
+    font-size: var(--text-2xl);
+  }
+
+  h2 {
+    font-size: var(--text-xl);
+  }
+
+  h3 {
+    font-size: var(--text-lg);
+  }
+
+  .hero__title {
+    font-size: var(--text-3xl);
+  }
+
+  .hero__description {
+    font-size: var(--text-base);
+  }
+
+  .hero__buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero__buttons .btn {
+    width: 100%;
+  }
+
+  .section {
+    padding-top: var(--spacing-2xl);
+    padding-bottom: var(--spacing-2xl);
+  }
+
+  .page-banner__title {
+    font-size: var(--text-2xl);
+  }
+
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .footer__brand {
+    max-width: 100%;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* =============================================
+   Маленькие планшеты (480px - 767px)
+   ============================================= */
+@media (min-width: 480px) {
+  :root {
+    --container-padding: 1.5rem;
+  }
+
+  h1 {
+    font-size: var(--text-3xl);
+  }
+
+  .hero__title {
+    font-size: var(--text-4xl);
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* =============================================
+   Планшеты (768px - 1023px)
+   ============================================= */
+@media (min-width: 768px) {
+  :root {
+    --container-padding: 2rem;
+  }
+
+  h1 {
+    font-size: var(--text-4xl);
+  }
+
+  h2 {
+    font-size: var(--text-3xl);
+  }
+
+  .hero__title {
+    font-size: var(--text-5xl);
+  }
+
+  .hero__description {
+    font-size: var(--text-xl);
+  }
+
+  .section {
+    padding-top: var(--spacing-3xl);
+    padding-bottom: var(--spacing-3xl);
+  }
+
+  .section--lg {
+    padding-top: var(--spacing-4xl);
+    padding-bottom: var(--spacing-4xl);
+  }
+
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .footer__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Карточка горизонтальная на планшетах */
+  .card--horizontal .card__image {
+    width: 160px;
+  }
+
+  /* Форма в две колонки */
+  .form-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-lg);
+  }
+}
+
+/* =============================================
+   Десктоп (1024px - 1279px)
+   ============================================= */
+@media (min-width: 1024px) {
+  /* Показываем десктопную навигацию */
+  .nav {
+    display: flex;
+  }
+
+  .burger {
+    display: none;
+  }
+
+  .mobile-nav,
+  .mobile-nav__overlay {
+    display: none;
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .footer__grid {
+    grid-template-columns: 1.5fr repeat(3, 1fr);
+  }
+
+  /* Двухколоночный лейаут для контактов */
+  .contacts-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
+    align-items: start;
+  }
+
+  /* О нас - текст с изображением */
+  .about-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-2xl);
+    align-items: center;
+  }
+
+  .about-layout--reverse {
+    direction: rtl;
+  }
+
+  .about-layout--reverse > * {
+    direction: ltr;
+  }
+}
+
+/* =============================================
+   Большие экраны (1280px+)
+   ============================================= */
+@media (min-width: 1280px) {
+  h1 {
+    font-size: var(--text-5xl);
+  }
+
+  .hero__title {
+    font-size: var(--text-6xl);
+  }
+
+  .section--lg {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+
+  .menu-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* =============================================
+   Мобильная навигация (показываем бургер < 1024px)
+   ============================================= */
+@media (max-width: 1023px) {
+  .nav {
+    display: none;
+  }
+
+  .header__phone {
+    display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+}
+
+/* =============================================
+   Улучшения для touch-устройств
+   ============================================= */
+@media (hover: none) and (pointer: coarse) {
+  /* Увеличиваем область нажатия */
+  .nav__link,
+  .mobile-nav__link,
+  .btn,
+  .filter-tag {
+    min-height: 44px;
+  }
+
+  /* Отключаем hover-эффекты */
+  .card:hover {
+    transform: none;
+  }
+
+  .card:hover .card__image img {
+    transform: none;
+  }
+
+  .gallery__item:hover img {
+    transform: none;
+  }
+
+  .gallery__item::after {
+    opacity: 1;
+  }
+
+  .gallery__caption {
+    transform: translateY(0);
+  }
+}
+
+/* =============================================
+   Печать
+   ============================================= */
+@media print {
+  .header,
+  .footer,
+  .hero__scroll,
+  .btn,
+  .burger,
+  .mobile-nav {
+    display: none !important;
+  }
+
+  body {
+    background: white;
+    color: black;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: var(--spacing-xl) 0;
+  }
+
+  .hero__background,
+  .hero__overlay {
+    display: none;
+  }
+
+  .hero__content {
+    color: black;
+  }
+
+  .hero__title,
+  .section-header__title {
+    color: black;
+  }
+
+  .section {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .card {
+    box-shadow: none;
+    border: 1px solid #ddd;
+    break-inside: avoid;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+}
+
+/* =============================================
+   Уменьшение анимаций при prefers-reduced-motion
+   ============================================= */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* =============================================
+   Тёмная тема (опционально, для будущего)
+   ============================================= */
+@media (prefers-color-scheme: dark) {
+  /* Можно раскомментировать для автоматической тёмной темы */
+  /*
+  :root {
+    --color-bg-light: #1A1A2E;
+    --color-bg-cream: #252540;
+    --color-bg-white: #2D2D4A;
+    --color-text-primary: #F5F0E8;
+    --color-text-secondary: #B8B0A8;
+    --color-border: #3D3D5C;
+  }
+  */
+}
+
+/* =============================================
+   Высококонтрастный режим
+   ============================================= */
+@media (prefers-contrast: high) {
+  :root {
+    --color-border: #000;
+    --shadow-sm: none;
+    --shadow-md: 0 0 0 2px #000;
+    --shadow-lg: 0 0 0 3px #000;
+  }
+
+  .btn {
+    border-width: 3px;
+  }
+
+  .card {
+    border: 2px solid var(--color-text-primary);
+  }
+}

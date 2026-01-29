@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Чайхона Согдиана — уютное узбекское кафе в Воронеже. Настоящий плов, шаурма в тандырном лаваше, свежая выпечка. Работаем круглосуточно!">
+  <meta name="keywords" content="чайхона, узбекская кухня, плов, шаурма, Воронеж, кафе, восточная кухня, согдиана">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Чайхона Согдиана — Узбекская кухня в Воронеже">
+  <meta property="og:description" content="Настоящий плов, шаурма в тандырном лаваше, свежая выпечка. Работаем круглосуточно!">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+
+  <title>Чайхона Согдиана — Узбекская кухня в Воронеже | Плов, Шаурма, Выпечка</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🫖%3C/text%3E%3C/svg%3E">
+
+  <!-- Стили -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Шапка -->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <!-- Логотип -->
+        <a href="index.html" class="logo">
+          <span class="logo__icon">🫖</span>
+          <span class="logo__text">
+            <span class="logo__name">Согдиана</span>
+            <span class="logo__tagline">чайхона</span>
+          </span>
+        </a>
+
+        <!-- Навигация (десктоп) -->
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link nav__link--active">Главная</a></li>
+            <li><a href="menu.html" class="nav__link">Меню</a></li>
+            <li><a href="about.html" class="nav__link">О нас</a></li>
+            <li><a href="contacts.html" class="nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <!-- Телефон -->
+        <a href="tel:+79260000000" class="header__phone">
+          <svg class="header__phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <span>+7 (926) XXX-XX-XX</span>
+        </a>
+
+        <!-- Бургер (мобильный) -->
+        <button class="burger" aria-label="Открыть меню">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Мобильная навигация -->
+  <div class="mobile-nav__overlay"></div>
+  <nav class="mobile-nav">
+    <ul class="mobile-nav__list">
+      <li><a href="index.html" class="mobile-nav__link mobile-nav__link--active">Главная</a></li>
+      <li><a href="menu.html" class="mobile-nav__link">Меню</a></li>
+      <li><a href="about.html" class="mobile-nav__link">О нас</a></li>
+      <li><a href="contacts.html" class="mobile-nav__link">Контакты</a></li>
+    </ul>
+    <div class="mobile-nav__phone">
+      <a href="tel:+79260000000" class="btn btn--primary btn--block">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        Позвонить
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero секция -->
+    <section class="hero">
+      <div class="hero__background">
+        <!-- Placeholder для фото (заменить на реальное) -->
+        <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #2D1B4E 0%, #4A3270 50%, #C17F59 100%);"></div>
+        <div class="hero__overlay"></div>
+      </div>
+
+      <div class="hero__content">
+        <p class="hero__subtitle" data-animate>Добро пожаловать в</p>
+        <h1 class="hero__title" data-animate data-animate-delay="100">Чайхону Согдиана</h1>
+        <p class="hero__description" data-animate data-animate-delay="200">
+          Настоящая узбекская кухня в сердце Воронежа. Домашний плов, ароматная шаурма
+          в тандырном лаваше и свежая выпечка — как у бабушки в Самарканде.
+        </p>
+        <div class="hero__buttons" data-animate data-animate-delay="300">
+          <a href="menu.html" class="btn btn--secondary btn--lg">Посмотреть меню</a>
+          <a href="contacts.html" class="btn btn--outline-light btn--lg">Как добраться</a>
+        </div>
+      </div>
+
+      <div class="hero__scroll">
+        <span class="hero__scroll-text">Листайте вниз</span>
+        <svg class="hero__scroll-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M5 12l7 7 7-7"/>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Преимущества -->
+    <section class="section section--cream">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__subtitle">Почему мы</p>
+          <h2 class="section-header__title">Наши преимущества</h2>
+          <div class="section-header__divider">
+            <span class="section-header__divider-icon">✦</span>
+          </div>
+        </div>
+
+        <div class="features-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--spacing-xl);">
+          <div class="feature-card" data-animate>
+            <div class="feature-card__icon">🕐</div>
+            <h3 class="feature-card__title">Круглосуточно</h3>
+            <p class="feature-card__description">
+              Мы работаем 24/7 — приходите в любое время дня и ночи.
+              Вкусная еда ждёт вас всегда!
+            </p>
+          </div>
+
+          <div class="feature-card" data-animate data-animate-delay="100">
+            <div class="feature-card__icon">🔥</div>
+            <h3 class="feature-card__title">Всегда свежее</h3>
+            <p class="feature-card__description">
+              Готовим блюда только из свежих продуктов.
+              Плов — каждый день новый, лепёшки — прямо из тандыра.
+            </p>
+          </div>
+
+          <div class="feature-card" data-animate data-animate-delay="200">
+            <div class="feature-card__icon">❤️</div>
+            <h3 class="feature-card__title">С душой</h3>
+            <p class="feature-card__description">
+              Готовим по семейным рецептам, передающимся из поколения в поколение.
+              Каждое блюдо — с заботой о вас.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Популярные блюда -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__subtitle">Попробуйте</p>
+          <h2 class="section-header__title">Наши хиты</h2>
+          <p class="section-header__description">
+            Блюда, которые заказывают снова и снова. Проверено гостями!
+          </p>
+          <div class="section-header__divider">
+            <span class="section-header__divider-icon">✦</span>
+          </div>
+        </div>
+
+        <div class="gallery" style="margin-bottom: var(--spacing-2xl);">
+          <!-- Плов -->
+          <article class="card dish-card" data-animate>
+            <div class="card__image">
+              <div class="placeholder-image">
+                <span class="placeholder-image__icon">🍚</span>
+                <span>Плов по-узбекски</span>
+              </div>
+              <span class="card__badge badge-popular">Хит</span>
+            </div>
+            <div class="card__content">
+              <h4 class="card__title">Плов по-узбекски</h4>
+              <p class="card__description">С бараниной, жёлтой морковью и зирой</p>
+              <div class="card__footer">
+                <span class="card__price">350 ₽</span>
+                <span class="card__weight">350 г</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Шаурма -->
+          <article class="card dish-card" data-animate data-animate-delay="100">
+            <div class="card__image">
+              <div class="placeholder-image">
+                <span class="placeholder-image__icon">🌯</span>
+                <span>Шаурма в тандырном лаваше</span>
+              </div>
+              <span class="card__badge badge-popular">Хит</span>
+            </div>
+            <div class="card__content">
+              <h4 class="card__title">Шаурма в тандырном лаваше</h4>
+              <p class="card__description">Наша гордость! В свежеиспечённом лаваше</p>
+              <div class="card__footer">
+                <span class="card__price">250 ₽</span>
+                <span class="card__weight">400 г</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Самса -->
+          <article class="card dish-card" data-animate data-animate-delay="200">
+            <div class="card__image">
+              <div class="placeholder-image">
+                <span class="placeholder-image__icon">🥟</span>
+                <span>Самса с бараниной</span>
+              </div>
+              <span class="card__badge badge-popular">Хит</span>
+            </div>
+            <div class="card__content">
+              <h4 class="card__title">Самса с бараниной</h4>
+              <p class="card__description">Слоёный пирожок с сочной начинкой</p>
+              <div class="card__footer">
+                <span class="card__price">120 ₽</span>
+                <span class="card__weight">150 г</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Лагман -->
+          <article class="card dish-card" data-animate data-animate-delay="300">
+            <div class="card__image">
+              <div class="placeholder-image">
+                <span class="placeholder-image__icon">🍜</span>
+                <span>Лагман</span>
+              </div>
+              <span class="card__badge badge-popular">Хит</span>
+            </div>
+            <div class="card__content">
+              <h4 class="card__title">Лагман</h4>
+              <p class="card__description">Густой суп с домашней лапшой и говядиной</p>
+              <div class="card__footer">
+                <span class="card__price">280 ₽</span>
+                <span class="card__weight">400 мл</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="text-center">
+          <a href="menu.html" class="btn btn--primary btn--lg">Смотреть всё меню</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- О заведении (краткий блок) -->
+    <section class="section section--dark pattern-overlay">
+      <div class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--spacing-2xl); align-items: center;">
+          <div data-animate>
+            <p class="section-header__subtitle" style="color: var(--color-secondary);">О нас</p>
+            <h2 style="color: var(--color-text-light); margin-bottom: var(--spacing-lg);">
+              Кусочек Узбекистана в Воронеже
+            </h2>
+            <p style="color: rgba(255,255,255,0.8); margin-bottom: var(--spacing-lg); line-height: var(--leading-relaxed);">
+              Чайхона «Согдиана» — это место, где время замедляется, а еда объединяет.
+              Мы создали уютное пространство, где каждый гость чувствует себя как дома.
+            </p>
+            <p style="color: rgba(255,255,255,0.8); margin-bottom: var(--spacing-xl); line-height: var(--leading-relaxed);">
+              Наши повара готовят по рецептам, которые передаются в семьях из поколения в поколение.
+              Приходите — и вы почувствуете разницу!
+            </p>
+            <a href="about.html" class="btn btn--outline-light">Узнать больше</a>
+          </div>
+
+          <div class="gallery__item" style="aspect-ratio: 4/3; border-radius: var(--radius-xl); overflow: hidden;" data-animate data-animate-delay="200">
+            <div class="placeholder-image" style="height: 100%;">
+              <span class="placeholder-image__icon">🏠</span>
+              <span>Фото интерьера</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Контактная информация -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__subtitle">Ждём вас</p>
+          <h2 class="section-header__title">Как нас найти</h2>
+          <div class="section-header__divider">
+            <span class="section-header__divider-icon">✦</span>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-xl); margin-bottom: var(--spacing-2xl);">
+          <div class="info-box" data-animate>
+            <div class="info-box__icon">📍</div>
+            <div class="info-box__content">
+              <h4 class="info-box__title">Адрес</h4>
+              <p class="info-box__text">г. Воронеж, ул. Ленина, 80</p>
+            </div>
+          </div>
+
+          <div class="info-box" data-animate data-animate-delay="100">
+            <div class="info-box__icon">🕐</div>
+            <div class="info-box__content">
+              <h4 class="info-box__title">Режим работы</h4>
+              <p class="info-box__text">Круглосуточно, без выходных</p>
+            </div>
+          </div>
+
+          <div class="info-box" data-animate data-animate-delay="200">
+            <div class="info-box__icon">📞</div>
+            <div class="info-box__content">
+              <h4 class="info-box__title">Телефон</h4>
+              <p class="info-box__text">
+                <a href="tel:+79260000000" style="color: var(--color-primary); font-weight: 600;">
+                  +7 (926) XXX-XX-XX
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center">
+          <a href="contacts.html" class="btn btn--primary">Подробнее</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Бренд -->
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <a href="index.html" class="logo">
+              <span class="logo__icon">🫖</span>
+              <span class="logo__text">
+                <span class="logo__name">Согдиана</span>
+                <span class="logo__tagline">чайхона</span>
+              </span>
+            </a>
+          </div>
+          <p class="footer__description">
+            Настоящая узбекская кухня в Воронеже. Приходите за вкусом и атмосферой Востока!
+          </p>
+        </div>
+
+        <!-- Навигация -->
+        <div>
+          <h4 class="footer__title">Навигация</h4>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Главная</a></li>
+            <li><a href="menu.html" class="footer__link">Меню</a></li>
+            <li><a href="about.html" class="footer__link">О нас</a></li>
+            <li><a href="contacts.html" class="footer__link">Контакты</a></li>
+          </ul>
+        </div>
+
+        <!-- Меню -->
+        <div>
+          <h4 class="footer__title">Меню</h4>
+          <ul class="footer__links">
+            <li><a href="menu.html#plov" class="footer__link">Плов</a></li>
+            <li><a href="menu.html#shashlik" class="footer__link">Шашлык</a></li>
+            <li><a href="menu.html#shawarma" class="footer__link">Шаурма</a></li>
+            <li><a href="menu.html#bakery" class="footer__link">Выпечка</a></li>
+          </ul>
+        </div>
+
+        <!-- Контакты -->
+        <div>
+          <h4 class="footer__title">Контакты</h4>
+          <div class="footer__contact-item">
+            <svg class="footer__contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>г. Воронеж, ул. Ленина, 80</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg class="footer__contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <a href="tel:+79260000000" style="color: inherit;">+7 (926) XXX-XX-XX</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg class="footer__contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+            <span>Круглосуточно</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Нижняя часть -->
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          © 2026 Чайхона Согдиана. Все права защищены.
+        </p>
+        <div class="rating">
+          <div class="rating__stars">★★★★★</div>
+          <span class="rating__value">4.7</span>
+          <span class="rating__count">(72+ оценки)</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Скрипты -->
+  <script src="js/main.js"></script>
+</body>
+</html>

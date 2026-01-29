@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="О чайхоне Согдиана в Воронеже. История заведения, наша философия и традиции узбекской кухни.">
+  <meta name="keywords" content="о нас, чайхона, Согдиана, Воронеж, узбекская кухня, история, традиции">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="О нас — Чайхона Согдиана">
+  <meta property="og:description" content="История чайхоны Согдиана, наша философия и традиции узбекской кухни.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+
+  <title>О нас — Чайхона Согдиана | Узбекская кухня в Воронеже</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🫖%3C/text%3E%3C/svg%3E">
+
+  <!-- Стили -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <!-- Шапка -->
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <!-- Логотип -->
+        <a href="index.html" class="logo">
+          <span class="logo__icon">🫖</span>
+          <span class="logo__text">
+            <span class="logo__name">Согдиана</span>
+            <span class="logo__tagline">чайхона</span>
+          </span>
+        </a>
+
+        <!-- Навигация (десктоп) -->
+        <nav class="nav">
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link">Главная</a></li>
+            <li><a href="menu.html" class="nav__link">Меню</a></li>
+            <li><a href="about.html" class="nav__link nav__link--active">О нас</a></li>
+            <li><a href="contacts.html" class="nav__link">Контакты</a></li>
+          </ul>
+        </nav>
+
+        <!-- Телефон -->
+        <a href="tel:+79260000000" class="header__phone">
+          <svg class="header__phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+          </svg>
+          <span>+7 (926) XXX-XX-XX</span>
+        </a>
+
+        <!-- Бургер (мобильный) -->
+        <button class="burger" aria-label="Открыть меню">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Мобильная навигация -->
+  <div class="mobile-nav__overlay"></div>
+  <nav class="mobile-nav">
+    <ul class="mobile-nav__list">
+      <li><a href="index.html" class="mobile-nav__link">Главная</a></li>
+      <li><a href="menu.html" class="mobile-nav__link">Меню</a></li>
+      <li><a href="about.html" class="mobile-nav__link mobile-nav__link--active">О нас</a></li>
+      <li><a href="contacts.html" class="mobile-nav__link">Контакты</a></li>
+    </ul>
+    <div class="mobile-nav__phone">
+      <a href="tel:+79260000000" class="btn btn--primary btn--block">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        Позвонить
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Баннер страницы -->
+    <section class="page-banner">
+      <div class="container">
+        <div class="page-banner__content">
+          <nav class="breadcrumbs" style="justify-content: center; margin-bottom: var(--spacing-lg);">
+            <span class="breadcrumbs__item">
+              <a href="index.html" class="breadcrumbs__link">Главная</a>
+            </span>
+            <span class="breadcrumbs__item">
+              <span class="breadcrumbs__current">О нас</span>
+            </span>
+          </nav>
+          <h1 class="page-banner__title">О нашей чайхоне</h1>
+          <p class="page-banner__description">
+            Место, где традиции Востока встречаются с гостеприимством Воронежа
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- История -->
+    <section class="section">
+      <div class="container">
+        <div class="about-layout">
+          <div data-animate>
+            <p class="section-header__subtitle" style="text-align: left;">Наша история</p>
+            <h2 style="margin-bottom: var(--spacing-lg);">Согдиана — больше, чем просто кафе</h2>
+            <p style="color: var(--color-text-secondary); margin-bottom: var(--spacing-md); line-height: var(--leading-relaxed);">
+              Название «Согдиана» — это дань уважения древней цивилизации, располагавшейся
+              на территории современного Узбекистана. Согдийцы славились своим гостеприимством,
+              искусством торговли и, конечно же, кулинарными традициями.
+            </p>
+            <p style="color: var(--color-text-secondary); margin-bottom: var(--spacing-md); line-height: var(--leading-relaxed);">
+              Мы открыли нашу чайхону, чтобы подарить воронежцам кусочек настоящего Востока.
+              Здесь каждый гость — дорогой друг, а каждое блюдо — результат любви к своему делу.
+            </p>
+            <p style="color: var(--color-text-secondary); line-height: var(--leading-relaxed);">
+              Наши повара — мастера, которые готовят так же, как их учили бабушки в Самарканде и Бухаре.
+              Рецепты передаются из поколения в поколение, а мы храним их и делимся с вами.
+            </p>
+          </div>
+
+          <div class="gallery__item" style="aspect-ratio: 4/3; border-radius: var(--radius-xl); overflow: hidden;" data-animate data-animate-delay="200">
+            <div class="placeholder-image" style="height: 100%;">
+              <span class="placeholder-image__icon">🏠</span>
+              <span>Фото интерьера чайхоны</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Философия -->
+    <section class="section section--cream">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__subtitle">Наша философия</p>
+          <h2 class="section-header__title">Почему выбирают нас</h2>
+          <div class="section-header__divider">
+            <span class="section-header__divider-icon">✦</span>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--spacing-xl);">
+          <div class="feature-card" data-animate>
+            <div class="feature-card__icon">👨‍🍳</div>
+            <h3 class="feature-card__title">Семейные рецепты</h3>
+            <p class="feature-card__description">
+              Готовим по рецептам, которые передаются в наших семьях уже несколько поколений.
+              Каждое блюдо — это история и традиция.
+            </p>
+          </div>
+
+          <div class="feature-card" data-animate data-animate-delay="100">
+            <div class="feature-card__icon">🥬</div>
+            <h3 class="feature-card__title">Свежие продукты</h3>
+            <p class="feature-card__description">
+              Используем только качественные и свежие ингредиенты.
+              Плов готовим каждый день, лепёшки выпекаем по мере заказов.
+            </p>
+          </div>
+
+          <div class="feature-card" data-animate data-animate-delay="200">
+            <div class="feature-card__icon">🔥</div>
+            <h3 class="feature-card__title">Настоящий тандыр</h3>
+            <p class="feature-card__description">
+              У нас настоящий узбекский тандыр — глиняная печь,
+              в которой выпечка получается невероятно вкусной и ароматной.
+            </p>
+          </div>
+
+          <div class="feature-card" data-animate data-animate-delay="300">
+            <div class="feature-card__icon">🤝</div>
+            <h3 class="feature-card__title">Восточное гостеприимство</h3>
+            <p class="feature-card__description">
+              На Востоке гость — это честь для дома. Мы стараемся,
+              чтобы каждый посетитель чувствовал себя желанным гостем.
+            </p>
+          </div>
+
+          <div class="feature-card" data-animate data-animate-delay="400">
+            <div class="feature-card__icon">💰</div>
+            <h3 class="feature-card__title">Честные цены</h3>
+            <p class="feature-card__description">
+              Качественная еда не должна стоить дорого.
+              Мы держим доступные цены без компромиссов по вкусу.
+            </p>
+          </div>
+
+          <div class="feature-card" data-animate data-animate-delay="500">
+            <div class="feature-card__icon">🕐</div>
+            <h3 class="feature-card__title">Всегда открыты</h3>
+            <p class="feature-card__description">
+              Работаем круглосуточно — приходите в любое время!
+              Вкусная еда ждёт вас и днём, и ночью.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Наша команда -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__subtitle">Наша команда</p>
+          <h2 class="section-header__title">Люди, которые создают вкус</h2>
+          <p class="section-header__description">
+            За каждым блюдом стоят талантливые и увлечённые люди
+          </p>
+          <div class="section-header__divider">
+            <span class="section-header__divider-icon">✦</span>
+          </div>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: var(--spacing-xl); max-width: 900px; margin: 0 auto;">
+          <!-- Шеф-повар -->
+          <div class="card" data-animate style="text-align: center;">
+            <div class="card__image" style="aspect-ratio: 1;">
+              <div class="placeholder-image">
+                <span class="placeholder-image__icon">👨‍🍳</span>
+                <span>Фото шеф-повара</span>
+              </div>
+            </div>
+            <div class="card__content">
+              <h4 class="card__title">Шеф-повар</h4>
+              <p class="card__description">
+                Мастер узбекской кухни с многолетним опытом.
+                Хранитель семейных рецептов.
+              </p>
+            </div>
+          </div>
+
+          <!-- Пекарь -->
+          <div class="card" data-animate data-animate-delay="100" style="text-align: center;">
+            <div class="card__image" style="aspect-ratio: 1;">
+              <div class="placeholder-image">
+                <span class="placeholder-image__icon">🧑‍🍳</span>
+                <span>Фото пекаря</span>
+              </div>
+            </div>
+            <div class="card__content">
+              <h4 class="card__title">Мастер тандыра</h4>
+              <p class="card__description">
+                Выпекает лепёшки и самсу так,
+                как это делали его предки в Бухаре.
+              </p>
+            </div>
+          </div>
+
+          <!-- Мангальщик -->
+          <div class="card" data-animate data-animate-delay="200" style="text-align: center;">
+            <div class="card__image" style="aspect-ratio: 1;">
+              <div class="placeholder-image">
+                <span class="placeholder-image__icon">🔥</span>
+                <span>Фото мангальщика</span>
+              </div>
+            </div>
+            <div class="card__content">
+              <h4 class="card__title">Мастер мангала</h4>
+              <p class="card__description">
+                Знает секреты идеального шашлыка
+                и люля-кебаба на углях.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Галерея интерьера -->
+    <section class="section section--dark pattern-overlay">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__subtitle" style="color: var(--color-secondary);">Атмосфера</p>
+          <h2 class="section-header__title" style="color: var(--color-text-light);">Загляните к нам</h2>
+          <p class="section-header__description" style="color: rgba(255,255,255,0.7);">
+            Уютное пространство, где хочется остаться подольше
+          </p>
+          <div class="section-header__divider">
+            <span class="section-header__divider-icon">✦</span>
+          </div>
+        </div>
+
+        <div class="gallery">
+          <div class="gallery__item" data-animate>
+            <div class="placeholder-image">
+              <span class="placeholder-image__icon">🪑</span>
+              <span>Фото зала</span>
+            </div>
+          </div>
+          <div class="gallery__item" data-animate data-animate-delay="100">
+            <div class="placeholder-image">
+              <span class="placeholder-image__icon">🏮</span>
+              <span>Фото декора</span>
+            </div>
+          </div>
+          <div class="gallery__item" data-animate data-animate-delay="200">
+            <div class="placeholder-image">
+              <span class="placeholder-image__icon">🍽️</span>
+              <span>Фото сервировки</span>
+            </div>
+          </div>
+          <div class="gallery__item" data-animate data-animate-delay="300">
+            <div class="placeholder-image">
+              <span class="placeholder-image__icon">🔥</span>
+              <span>Фото тандыра</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Призыв к действию -->
+    <section class="section">
+      <div class="container">
+        <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+          <h2 style="margin-bottom: var(--spacing-lg);">Приходите и попробуйте сами!</h2>
+          <p style="color: var(--color-text-secondary); margin-bottom: var(--spacing-xl); line-height: var(--leading-relaxed);">
+            Слова не передадут вкус настоящего узбекского плова или аромат свежей лепёшки из тандыра.
+            Приходите — мы будем рады видеть вас!
+          </p>
+          <div style="display: flex; flex-wrap: wrap; gap: var(--spacing-md); justify-content: center;">
+            <a href="menu.html" class="btn btn--primary btn--lg">Посмотреть меню</a>
+            <a href="contacts.html" class="btn btn--outline btn--lg">Как добраться</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Бренд -->
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <a href="index.html" class="logo">
+              <span class="logo__icon">🫖</span>
+              <span class="logo__text">
+                <span class="logo__name">Согдиана</span>
+                <span class="logo__tagline">чайхона</span>
+              </span>
+            </a>
+          </div>
+          <p class="footer__description">
+            Настоящая узбекская кухня в Воронеже. Приходите за вкусом и атмосферой Востока!
+          </p>
+        </div>
+
+        <!-- Навигация -->
+        <div>
+          <h4 class="footer__title">Навигация</h4>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Главная</a></li>
+            <li><a href="menu.html" class="footer__link">Меню</a></li>
+            <li><a href="about.html" class="footer__link">О нас</a></li>
+            <li><a href="contacts.html" class="footer__link">Контакты</a></li>
+          </ul>
+        </div>
+
+        <!-- Меню -->
+        <div>
+          <h4 class="footer__title">Меню</h4>
+          <ul class="footer__links">
+            <li><a href="menu.html#plov" class="footer__link">Плов</a></li>
+            <li><a href="menu.html#shashlik" class="footer__link">Шашлык</a></li>
+            <li><a href="menu.html#shawarma" class="footer__link">Шаурма</a></li>
+            <li><a href="menu.html#bakery" class="footer__link">Выпечка</a></li>
+          </ul>
+        </div>
+
+        <!-- Контакты -->
+        <div>
+          <h4 class="footer__title">Контакты</h4>
+          <div class="footer__contact-item">
+            <svg class="footer__contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>г. Воронеж, ул. Ленина, 80</span>
+          </div>
+          <div class="footer__contact-item">
+            <svg class="footer__contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <a href="tel:+79260000000" style="color: inherit;">+7 (926) XXX-XX-XX</a>
+          </div>
+          <div class="footer__contact-item">
+            <svg class="footer__contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="10"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+            <span>Круглосуточно</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Нижняя часть -->
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          © 2026 Чайхона Согдиана. Все права защищены.
+        </p>
+        <div class="rating">
+          <div class="rating__stars">★★★★★</div>
+          <span class="rating__value">4.7</span>
+          <span class="rating__count">(72+ оценки)</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Скрипты -->
+  <script src="js/main.js"></script>
+</body>
+</html>
